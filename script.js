@@ -1,5 +1,12 @@
-    const audio = document.getElementById('music');
-audio.addEventListener('ended', function() {
-  // play next song
-  // you'd need to implement logic for playing the next song here
+// JavaScript for controlling the music player
+const audio = document.getElementById('myAudio');
+const playlist = document.getElementById('playlist');
+
+// Event listener for playing songs from the playlist
+playlist.addEventListener('click', function (e) {
+  if (e.target && e.target.matches('li.song')) {
+    const song = e.target.getAttribute('data-src');
+    audio.src = song;
+    audio.play();
+  }
 });
