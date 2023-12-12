@@ -8,17 +8,17 @@
       <h1>Music</h1>
       <header>Music Playlist</header>
       <p>this is a test</p>
-      <audio controls>
-        <source src="graveyard.mp3">
-      </audio>
-      
-      <audio controls>
-        <source src="music/graveyard.mp3">
-      </audio>
-       <audio controls>
-        <source src="music/or nah bass boosted.mp3">
-      </audio>
+     <audio id="music" controls>
+       <source src="graveyard.mp3">
+       <source src="or nah bass boosted.mp3">
+     </audio>
       <script>
+        const audio = document.getElementById('music');
+audio.addEventListener('ended', function() {
+  // play next song
+  // you'd need to implement logic for playing the next song here
+});
+
   </script>
     </header>
   </body>
