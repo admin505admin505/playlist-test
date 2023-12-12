@@ -1,5 +1,5 @@
 // JavaScript for controlling the music player
-const audio = document.getElementById('myAudio');
+const audio = document.getElementById('music');
 const playlist = document.getElementById('playlist');
 
 // Event listener for playing songs from the playlist
